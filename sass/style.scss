@@ -1,0 +1,74 @@
+@import "partials/header.scss";
+@import "partials/banner.scss";
+@import "partials/content.scss";
+@import "partials/footer.scss";
+@import "partials/variables.scss"; 
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans';
+}
+
+.container-fluid {
+    max-width: 1789px;
+    margin: 0 auto;
+}
+
+@media (min-width: $medium-device) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+// FONTS
+
+@font-face {
+    font-family: 'Lucida Sans';
+    src: url('../fonts/LucidaSans.eot');
+    src: url('../fonts/LucidaSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LucidaSans.woff2') format('woff2'),
+        url('../fonts/LucidaSans.woff') format('woff'),
+        url('../fonts/LucidaSans.ttf') format('truetype'),
+        url('../fonts/LucidaSans.svg#LucidaSans') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lucida Sans';
+    src: url('../fonts/LucidaSans-Demi.eot');
+    src: url('../fonts/LucidaSans-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LucidaSans-Demi.woff2') format('woff2'),
+        url('../fonts/LucidaSans-Demi.woff') format('woff'),
+        url('../fonts/LucidaSans-Demi.ttf') format('truetype'),
+        url('../fonts/LucidaSans-Demi.svg#LucidaSans-Demi') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+

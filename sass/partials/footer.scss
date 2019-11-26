@@ -1,0 +1,117 @@
+@import "./variables.scss";
+.footer-outer {
+    background: url('../images/Main-BG.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .footer-logo {
+        text-align: center;
+        padding: 20px 0 30px 0;
+        @media (max-width: $mini-device) {
+            padding: 15px;
+        }
+        img {
+            height: 172px;
+            @media (max-width: $mini-device) {
+                height: 140px;
+            }
+        }
+    }
+    .footer-text {
+        padding-bottom: 85px;
+        border-bottom: 1px solid $lightplantium;
+        @media (max-width: $large-mobile-device) {
+            padding-bottom: 25px;
+        }
+        .ccel-harware {
+            p {
+                color: $plantium;
+                font-size: 14px;
+                line-height: 30px;
+            }
+        }
+        .footer-links {
+            @media (max-width: $tablet-device) {
+                margin-left: 0;
+            }
+            ul {
+                padding-left: 0;
+                margin-bottom: 0;
+                li {
+                    list-style: none;
+                    a {
+                        color: $plantium;
+                        font-size: 14px;
+                        line-height: 30px;
+                        transition: 0.3s all ease-in-out;
+                        &:hover {
+                            color: $lightblue;
+                        }
+                    }
+                }
+            }
+        }
+        .contact-us {
+            p {
+                font-size: 14px;
+                line-height: 30px;
+                color: $plantium;
+                margin-bottom: 0;
+            }
+            a {
+                color: $greyplantium;
+                font-size: 15px;
+                line-height: 21px;
+                border: 1px solid $azure;
+                background: $white;
+                padding: 16px 110px 16px 20px;
+                border-radius: 4px;
+                margin-top: 25px;
+                display: inline-block;
+                border: 1px solid transparent;
+                transition: 0.3s all ease-in-out;
+                @media (max-width: $medium-device) {
+                    padding-right: 70px;
+                }
+                @media (max-width: $tablet-device) {
+                    padding-right: 30px;
+                }
+                &:hover {
+                    background: transparent;
+                    border: 1px solid $white;
+                    color: $white;
+                }
+            }
+        }
+        >div {
+            @media (max-width: $large-mobile-device) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .copyrights-outer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 23px 0;
+        @media (max-width: $tablet-device) {
+            display: block;
+        }
+        @media (max-width: $large-mobile-device) {
+            display: block;
+        }
+        .copy-rights-text {
+            p {
+                color: $white;
+                margin-bottom: 0;
+            }
+        }
+        .icons {
+            a {
+                i {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
